@@ -3,12 +3,18 @@ Foundation Dropdown Poplulator is a jQuery plugin that allows you to turn Zurb F
 ##Installation##
 ###Install with Bower (Preferred)###
 Run the following command from your public html directory
-    bower install foundation-dropdown-populator
+```
+bower install foundation-dropdown-populator
+```
 ###Install Manually###
 Download the source files from the following link and copy them to where you keep your publicly accessible javascript files in your application.
 https://github.com/treetop1500/foundation-dropdown-populator
 Include a script tag that links the plugin before the closing body, and after jquery, foundation and foundation dropdown javascripts.
-    <script type='text/javascript' src='/js/jquery.jquery.foundation-dropdown-populator/js/jquery.foundation-dropdown-populator.min.js'></script>
+```
+<script type='text/javascript' 
+    src='/js/jquery.jquery.foundation-dropdown-populator/js/jquery.foundation-dropdown-populator.min.js'>
+</script>
+```
 ##Example Usage##
 Each table cell has a 'rel' attribute that holds it's appropriate value. Note that the table also has the class of '.populate. Also make sure that each link that invokes the dropdown, and it's associated input are within a Foundation row of their own.
 ```
@@ -43,14 +49,16 @@ Each table cell has a 'rel' attribute that holds it's appropriate value. Note th
     </div>
 ```
 Initialize the plugin.
-```    $(document).ready(function() {
+```
+    $(document).ready(function() {
         $('table.populate').dropdownPopulator();
     });
 ```
 
 ##Optional Configuration##
 You can configure two properties on this plugin: debug and closeOnClick.  debug simply logs some information to the console at run time. closeOnClick will ensure that the dropdown closes when an option has been chosen.
-```    $(document).ready(function() {
+```
+    $(document).ready(function() {
         $('table.populate').dropdownPopulator({
             debug: true,
             closeOnClick: true
