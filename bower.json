@@ -4,8 +4,15 @@
     "rwade <rwade@grayloon.com>"
   ],
   "description": "Foundation Dropdown Poplulator is a jQuery plugin that allows you to turn Zurb Foundation's dropdown components into select menus to populate input field values.",
-  "main": "",
-  "moduleType": [],
+  "main": [
+    "js/jquery.foundation-dropdown-populator.js"
+  ],
+  "dependencies": {
+    "foundation": "~5.5.2"
+  },
+  "moduleType": [
+    "node"
+  ],
   "keywords": [
     "jquery",
     "foundation"
