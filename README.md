@@ -27,7 +27,7 @@ Each table cell has a 'rel' attribute that holds it's appropriate value. Note th
                 <a data-dropdown="drop1"
                   aria-controls="drop1"
                   aria-expanded="false"
-                  id="drop1">pick</a>
+                  id="dropAnchor1">pick</a>
             </span>
         </div>
     </div>
