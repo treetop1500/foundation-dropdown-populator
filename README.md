@@ -11,6 +11,7 @@ Include a script tag that links the plugin before the closing body, and after jq
     <script type='text/javascript' src='/js/jquery.jquery.foundation-dropdown-populator/js/jquery.foundation-dropdown-populator.min.js'></script>
 ##Example Usage##
 Each table cell has a 'rel' attribute that holds it's appropriate value. Note that the table also has the class of '.populate. Also make sure that each link that invokes the dropdown, and it's associated input are within a Foundation row of their own.
+```
     <div class="row collapse">
         <div class="small-9 columns">
             <input type="text" id="input1" />
@@ -40,17 +41,19 @@ Each table cell has a 'rel' attribute that holds it's appropriate value. Note th
             </tbody>
         </table>
     </div>
-
+```
 Initialize the plugin.
-    $(document).ready(function() {
+```    $(document).ready(function() {
         $('table.populate').dropdownPopulator();
     });
+```
 
 ##Optional Configuration##
 You can configure two properties on this plugin: debug and closeOnClick.  debug simply logs some information to the console at run time. closeOnClick will ensure that the dropdown closes when an option has been chosen.
-    $(document).ready(function() {
+```    $(document).ready(function() {
         $('table.populate').dropdownPopulator({
             debug: true,
             closeOnClick: true
         });
     });
+```
