@@ -30,6 +30,7 @@
 			$input = $($anchor).closest('div.row').find('input');
 			if ($input.val($cell_value) && settings.closeOnClick) {
 				Foundation.libs.dropdown.close($('#' + $dropdown_id));
+				$input.change();
 			}
 			if (settings.debug == true) {
 				console.log('-----------------');
