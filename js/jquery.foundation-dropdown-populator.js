@@ -1,5 +1,5 @@
 /*
- * Foundation Dropdown Populator v1.1.0 by @treetop1500
+ * Foundation Dropdown Populator v1.1.1 by @treetop1500
  * https://github.com/treetop1500/foundation-dropdown-populator
  * Free to use under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
@@ -21,9 +21,7 @@
 			closeOnClick: true,
 			debug: false
 		}, options );
-		console.log(this);
-		this.find('td').css('cursor','pointer').on('click',function() {
-			console.log($(this));
+		this.find('td').css('cursor','pointer').on('click keyUp',function() {
 			$cell_value = $(this).attr('rel');
 			$dropdown_id = $(this).closest('div.content').attr('id');
 			$anchor = $("a[data-dropdown*='"+$dropdown_id+"']");
