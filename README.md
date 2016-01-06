@@ -23,12 +23,11 @@ Each table cell has a 'rel' attribute that holds it's appropriate value. Note th
             <input type="text" id="input1" />
         </div>
         <div class="small-3 columns">
-            <span class="postfix">
-                <a data-dropdown="drop1"
+            <button class="postfix" data-dropdown="drop1"
                   aria-controls="drop1"
                   aria-expanded="false"
-                  id="dropAnchor1">pick</a>
-            </span>
+                  id="dropAnchor1">pick
+            </button>
         </div>
     </div>
     <div id="drop1"
